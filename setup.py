@@ -8,7 +8,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='SurveyGizmo',
-    version="1.0.1",
+    version="1.0.2-nmalkin",
     description='A Python Wrapper for SurveyGizmo\'s restful API service.',
     long_description=README,
     author='Ryan P Kilby',

@@ -3,6 +3,8 @@
 
 A Python Wrapper for [SurveyGizmo](http://developer.surveygizmo.com/rest-api-documentation/)'s restful API service. Sort of - it's not really finished at the moment.
 
+**This fork works only with Python 3.**
+
 
 ## Installation
 

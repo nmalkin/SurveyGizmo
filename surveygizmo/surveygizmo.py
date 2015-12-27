@@ -1,6 +1,6 @@
 
 import time
-from api import base
+from .api import base
 
 
 class ImproperlyConfigured(Exception):
@@ -79,7 +79,7 @@ class API(object):
         """ Instantiates API resources and adds them to the API instance. e.g., The
             `surveygizmo.api.survey.Survey` resource is callable as `sg.api.survey`.
         """
-        resources = __import__('api', globals(), locals(), ['*'])
+        resources = __import__('surveygizmo.api', globals(), locals(), ['*'])
 
         for resource_name in resources.__all__:
             resource = getattr(resources, resource_name)
